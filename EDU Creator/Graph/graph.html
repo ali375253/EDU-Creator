@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="graph.css">
+		<script type="text/javascript">
+			  function playSound ( soundname )   
+			  {
+			    var thissound = document.getElementById( soundname );
+			    thissound.Play();
+			    alert( "Played " + soundname );
+			  }
+			  playSound( "beep" );
+		</script>
+		<!-- <link rel="stylesheet" href="coin_css.css"> -->
+    </head>
+	<body>
+		<div class="container">
+			<section class="animation">
+				<!-- <h2>Animation</h2> -->
+				<embed src="graph.wav" autostart="true" width="0" height="0" id="beep" 
+  enablejavascript="true">
+				<audio autoplay>
+				  <source src="graph.ogg" type="audio/ogg">
+				  <source src="graph.mp3" type="audio/mpeg">
+				  	<source src="graph.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio>
+					<svg class="graph">
+                	<title id="title">A line chart showing some information</title>
+								<g class="grid x-grid" id="xGrid">
+                    <line x1="120" x2="120" y1="50" y2="371"></line>
+                    <svg height="340" width="550" class="line_grid">
+                    <!-- <line  class=path x1="0" y1="492" x2="400" y2="100" style="stroke:rgb(25,0,0);stroke-width:2" /> -->
+										<line  class=path x1="120" y1="370" x2="380" y2="110" style="stroke:rgb(25,0,0);stroke-width:2" />
+										<circle class=cir1 cx="150" cy="340" r="2" stroke="black" stroke-width="1" fill="none" />
+										<circle class=cir2 cx="190" cy="300" r="2" stroke="black" stroke-width="1" fill="none" />
+										<circle class=cir3 cx="230" cy="260" r="2" stroke="black" stroke-width="1" fill="none" />
+										<circle class=cir4 cx="270" cy="220" r="2" stroke="black" stroke-width="1" fill="none" />
+										<circle class=cir5 cx="310" cy="180" r="2" stroke="black" stroke-width="1" fill="none" />
+										<circle class=cir6 cx="350" cy="140" r="2" stroke="black" stroke-width="1" fill="none" />
+                    </svg>
+                </g>
+                <g class="grid y-grid" id="yGrid">
+                    <line x1="120" x2="438" y1="370" y2="370"></line>
+                </g>
+                    <g class="labels x-labels">
+                    <text x="155" y="400">10</text>
+                    <text x="195" y="400">20</text>
+                    <text x="235" y="400">30</text>
+                    <text x="275" y="400">40</text>
+                    <text x="315" y="400">50</text>
+                    <text x="355" y="400">60</text>
+                    <text x="395" y="400">70</text>
+                    <text x="435" y="400">80</text>
+                    <text x="285" y="440" class="label-title">value of X</text>
+                </g>
+                <g class="labels y-labels">
+                    <text x="110" y="60">40</text>
+                    <text x="110" y="100">35</text>
+                    <text x="110" y="140">30</text>
+                    <text x="110" y="180">25</text>
+                    <text x="110" y="220">20</text>
+                    <text x="110" y="260">15</text>
+                    <text x="110" y="300">10</text>
+                    <text x="110" y="340">5</text>
+                    <text x="40" y="200" class="label-title">value of Y</text>
+                </g>
+            </svg>
+			</section>
+			<div class="sub_container">
+				<section class="formula">
+					<h2>Formula</h2>
+					 <span>
+						  <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Σx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Σy<br>&nbsp;&nbsp;&nbsp;&nbsp;x̄&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ȳ&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N</span><br><br> 
+					 </span>
+					<span> 
+						 <span class="frac" style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ΣxΣy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>R&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							<!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+							<g>
+							 <title>Layer 1</title>
+							 <line stroke="#000000" transform="rotate(60 19.935096740722653,25.49102783203125) " id="svg_5" y2="35.34424" x2="32.42732" y1="15.63782" x1="7.44287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" fill="none"/>
+							 <line stroke="#000000" transform="rotate(10 12.750000000000098,31.624999999999993) " id="svg_8" y2="40.30035" x2="19.31696" y1="22.94965" x1="6.18304" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" fill="none"/>
+							 <line stroke="#000000" id="svg_10" y2="9" x2="129.54658" y1="9" x1="21.50002" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" fill="none"/>
+							 <text stroke="#000000" transform="matrix(0.843045373228604,0,0,0.8558217837557791,-101.4978634747057,14.750331163492856) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_12" y="23.45052" x="180" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Σx</text>
+							 <text stroke="#000000" transform="matrix(0.7872621154833226,0,0,0.6214285568585467,25.475039221985995,59.73601484066335) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_13" y="-52.27587" x="44.48733" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">2</text>
+							 <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_14" y="38.25" x="80.75002" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000"/>
+							 <text style="cursor: move;" id="svg_16" stroke="#000000" transform="matrix(0.843045373228604,0,0,0.8558217837557791,-101.4978634747057,14.750331163492856) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="24.02808" x="245" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Σy</text>
+							 <text id="svg_17" stroke="#000000" transform="matrix(0.7872621154833226,0,0,0.6214285568585467,25.475039221985995,59.73601484066335) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="-51.98684" x="114.05143" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">2</text>
+							 <text font-weight="bold" id="svg_18" stroke="#000000" transform="matrix(0.843045373228604,0,0,0.8558217837557791,-101.4978634747057,14.750331163492856) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="24.90386" x="211.55777" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">+</text>
+							</g>
+						   </svg>&nbsp;</sub></span>&nbsp;</span>
+					 </span>
+				</section>
+				<section class="description">
+						<h2>Description</h2>
+						<p>Draw the scatter diagram and find the relation. 
+				<table border="1" class="table1">
+						<tr>
+							<td>x</td>
+							<td>10</td>
+							<td>20</td>
+							<td>30</td>
+							<td>40</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>y</td>
+							<td>5</td>
+							<td>10</td>
+							<td>15</td>
+							<td>20</td>
+							<td>25</td>	
+						</tr>
+
+				</table>
+
+				<table border="1" class="table2">
+					<tr>
+						<td>x</td>
+						<td>y</td>
+						<td>x=(x-x&#772;)</td>
+						<td>x<sup>2</sup>&nbsp;</td>
+						<td>y=(y-y&#772;)</td>
+						<td>y<sup>2</sup>&nbsp;</td>
+						<td>xy</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>5</td>
+						<td>-20</td>
+						<td>400</td>
+						<td>-10</td>
+						<td>100</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>10</td>
+						<td>-10</td>
+						<td>100</td>
+						<td>-5</td>
+						<td>25</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>30</td>
+						<td>15</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>40</td>
+						<td>20</td>
+						<td>10</td>
+						<td>100</td>
+						<td>5</td>
+						<td>25</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>50</td>
+						<td>25</td>
+						<td>20</td>
+						<td>400</td>
+						<td>10</td>
+						<td>100</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>&Sigma;x=30</td>
+						<td>&Sigma;y=15</td>
+						<td></td>
+						<td>&Sigma;x<sup>2</sup><sub>&nbsp;</sub>=1000</td>
+						<td></td>
+						<td>&Sigma;y=250</td>
+						<td>&Sigma;xy=500</td>
+					</tr>
+					
+					
+					
+						<!-- <td>&Sigma;x=45</td>
+						<td>&Sigma;x=22.5</td> -->
+						
+				</table>
+					<!-- <h2>Description</h2> -->
+					<!-- <p>Here we have to find the probablity of that an tail side is obtained when the coin is tossed once.</p> -->
+					<!-- <span> -->
+						 <!-- <span class=frac; style="line-height: 70%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(E)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>P(E)&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&#x2013;&#x2013;&#x2013;&nbsp;&nbsp;=&nbsp;&nbsp;&#x2013;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(S)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span> -->
+					<!-- </span> -->
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,678 @@
+/* 
+  .graph .labels.x-labels {
+    text-anchor: middle;
+  }
+  
+  .graph .labels.y-labels {
+    text-anchor: end;
+  }
+	
+  .graph {
+		height:500px;
+		width: 100%;
+  }
+  
+  .graph .grid {
+    stroke:black;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+  }
+  
+  .labels {
+    font-size: 13px;
+		 
+  }
+  
+  .label-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    fill: black;
+		text-anchor: middle;
+  }
+  text
+	{
+		text-anchor: end;
+	}
+  .data {
+    fill: blue;
+    stroke-width: 1; 
+  }
+  .line_grid{
+    height: 340;
+    width: 550;
+    animation: line 5s linear forwards;
+		overflow:visible;
+  }
+  @keyframes line{
+    0%{ height: 0;width: 0;}
+    20%{height: 68px;width: 110px;}
+    40%{height:136px; width: 220px}
+    60%{height: 204px;width: 330px;}
+    80%{height: 272px;width: 440px;}
+    100%{height: 340px; width: 550px;}    
+  }
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear  infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+	.table1 td
+	{
+			font-size:25px;
+			width:90px;
+      text-align:center;	
+  }
+  .table1 {
+    border-collapse: collapse;
+    margin:20px 0 0 0;
+  }
+
+  .table1, th, td {
+    border: 1px solid black;
+  }
+  .table2
+  {
+    margin:30px 0 0 0;
+  }
+	.table2 td
+	{
+			font-size:25px;
+			width:85px;
+      text-align:center;	
+  }
+  .table2 {
+    border-collapse: collapse;
+  }
+
+  .table2, th, td {
+    border: 1px solid black;
+  } */
+
+  @media (min-width: 1025px) {
+    .container{
+      width:100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .animation{
+      width: 50%;
+      background: #f0e68c;
+      margin-top: 1%; 
+      margin-bottom: 1%;
+      height: 640px;
+      /*margin: 1% 0 1% 1%;*/
+    }
+    .sub_container{
+      width: 50%;
+      height: 640px;
+      display: flex;
+      flex-direction: column;
+      /*margin: 1% 1% 1%;*/
+      margin-top: 1%;
+      margin-bottom: 1%;
+      
+    }  
+    
+    /*animation Coin Flipping------------------------------------------------------------------------*/
+    .graph .labels.x-labels {
+      text-anchor: middle;
+    }
+    
+    .graph .labels.y-labels {
+      text-anchor: end;
+    }
+    
+    .graph {
+      height:500px;
+      width: 100%;
+    }
+    
+    .graph .grid {
+      stroke:black;
+      stroke-dasharray: 0;
+      stroke-width: 1;
+    }
+    
+    .labels {
+      font-size: 13px;
+       
+    }
+    
+    .label-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      fill: black;
+      text-anchor: middle;
+    }
+    text
+    {
+      text-anchor: end;
+    }
+    .data {
+      fill: blue;
+      stroke-width: 1; 
+    }
+    .line_grid{
+      height: 340;
+      width: 550;
+      animation: line 5s linear forwards;
+      overflow:visible;
+    }
+    @keyframes line{
+      0%{ height: 0;width: 0;}
+      20%{height: 68px;width: 110px;}
+      40%{height:136px; width: 220px}
+      60%{height: 204px;width: 330px;}
+      80%{height: 272px;width: 440px;}
+      100%{height: 340px; width: 550px;}    
+    }
+    .path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 24s linear 15s infinite;
+    }
+    
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir1{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot1 2s linear 13s infinite;
+    }
+    
+    @keyframes dot1 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir2{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot2 7s linear 15s infinite;
+    }
+    
+    @keyframes dot2 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir3{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot3 2s linear 17s infinite;
+    }
+    
+    @keyframes dot3 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir4{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot4 2s linear 19s infinite;
+    }
+    
+    @keyframes dot4 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir5{
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot5 2s linear 21s infinite;
+    }
+    
+    @keyframes dot5 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+	.cir6 {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dot6 2s linear 22.5s infinite;
+    }
+    
+    @keyframes dot6 {
+      from {
+        stroke-dashoffset: 1000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+	
+    /*-----------------------------------------------------------------*/
+  
+  
+    /*formula----------------------------------------------------------*/
+    
+    .formula{
+      background: #98fb98;
+      width: 98%;
+      height: 316px;
+      border-bottom: 1px solid black;
+      padding: 0 1% 1% 1%;
+    }
+    
+    .formula span{
+      font-size: 24px;
+      font-weight: bold;
+      animation :demo 5s infinite alternate linear forwards;
+    }
+    
+    /*svg{
+      stroke-dasharray: 150;
+      animation :demo 5s infinite alternate linear forwards;
+    }*/
+  
+    @keyframes demo{
+      0%{
+        fill:none;
+        stroke-dashoffset:1000;
+        opacity: 0.6;
+      }
+      50%{
+        fill:rgba(255,0,0,0);
+        stroke-dashoffset:75;
+        opacity: 0.8;
+      }
+      100%{
+        stroke-dashoffset:0;
+        opacity: 1;
+  
+      }
+    }
+    
+    /*-----------------------------------------------------------------*/
+  
+    /*description------------------------------------------------------*/
+    
+    .description{
+      width: 98%;
+      background: #66cdaa;
+      height: 309px;
+      padding: 0 1% 1% 1%;
+      overflow: scroll;
+    }
+    
+    p{
+      font-family: courier;
+      font-size: 20px;
+    }
+    .description span{
+      font-size: 20px;
+    }
+    /*mi{
+      font-size: 30px;
+    }*/
+    
+    /*-----------------------------------------------------------------*/
+  
+    .table1 td
+    {
+        font-size:25px;
+        width:90px;
+        text-align:center;	
+    }
+    .table1 {
+      border-collapse: collapse;
+      margin:20px 0 0 0;
+      padding: 0;
+    }
+  
+    .table1, th, td {
+      border: 1px solid black;
+    }
+    .table2
+    {
+      border-collapse: collapse;
+      margin:20px 0 0 0;
+      padding: 0;
+    }
+    .table2 td
+    {
+        font-size:25px;
+        width:85px;
+        text-align:center;	
+    }
+    .table2 {
+      border-collapse: collapse;
+    }
+  
+    .table2, th, td {
+      border: 1px solid black;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .container{
+      width:100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .animation{
+      width: 100%;
+      background: #f0e68c;
+      height: 105%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      /*margin: 1% 0 1% 1%;*/
+  
+    }
+    .sub_container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      /*margin: 1% 1% 1%;*/
+      margin-top: 1%;
+      margin-bottom: 1%;
+      
+    }
+    
+  
+    /*formula----------------------------------------------------------*/
+    
+     .formula{
+      background: #98fb98;
+      width: 98%;
+      height: 50%;
+      border-bottom: 1px solid black;
+      padding: 0 1% 1% 1%;
+    }
+    
+    .formula span{
+      font-size: 24px;
+      font-weight: bold;
+      animation :demo 5s infinite alternate linear forwards;
+    }
+  
+    /*svg{
+      stroke-dasharray: 150;
+      animation :demo 5s infinite alternate linear forwards;
+    }*/
+  
+    @keyframes demo{
+      0%{
+        fill:none;
+        stroke-dashoffset:1000;
+        opacity: 0.6;
+      }
+      50%{
+        fill:rgba(255,0,0,0);
+        stroke-dashoffset:75;
+        opacity: 0.8;
+      }
+      100%{
+        stroke-dashoffset:0;
+        opacity: 1;
+      }
+    }
+    
+    /*-----------------------------------------------------------------*/
+  
+    /*description------------------------------------------------------*/
+    
+    .description{
+      width: 98%;
+      background: #66cdaa;
+      height: auto; /* 50% */
+      padding: 0 1% 1% 1%;
+    }
+    
+    p{
+      font-family: courier;
+      font-size: 22px;
+    }
+    .description span{
+      font-size: 22px;
+    }
+    /*mi{
+      font-size: 30px;
+    }*/
+    
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .container{
+      width:100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .animation{
+      width: 100%;
+      background: #f0e68c;
+      height: auto;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      /*margin: 1% 0 1% 1%;*/
+  
+    }
+    .sub_container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      /*margin: 1% 1% 1%;*/
+      margin-top: 1%;
+      margin-bottom: 1%;
+      
+    }
+    
+    /*animation Coin Flipping------------------------------------------------------------------------*/
+    
+    /*-----------------------------------------------------------------*/
+  
+    /*formula----------------------------------------------------------*/
+    
+     .formula{
+      background: #98fb98;
+      width: 98%;
+      height: 40%;
+      border-bottom: 1px solid black;
+      padding: 0 1% 1% 1%;
+    }
+    
+    .formula span{
+      font-size: 24px;
+      font-weight: bold;
+      animation :demo 5s infinite alternate linear forwards;
+    }
+  
+    /*svg{
+      stroke-dasharray: 150;
+      animation :demo 5s infinite alternate linear forwards;
+    }*/
+  
+    @keyframes demo{
+      0%{
+        fill:none;
+        stroke-dashoffset:1000;
+        opacity: 0.6;
+      }
+      50%{
+        fill:rgba(255,0,0,0);
+        stroke-dashoffset:75;
+        opacity: 0.8;
+      }
+      100%{
+        stroke-dashoffset:0;
+        opacity: 1;
+  
+      }
+    }
+    
+    /*-----------------------------------------------------------------*/
+  
+    /*description------------------------------------------------------*/
+    
+    .description{
+      width: 98%;
+      background: #66cdaa;
+      height: auto;
+      padding: 0 1% 1% 1%;
+    }
+    
+    p{
+      font-family: courier;
+      font-size: 20px;
+    }
+    .description span{
+      font-size: 20px;
+    }
+    /*mi{
+      font-size: 30px;
+    }*/
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 240px) and (max-width: 480px) {
+  
+    .container{
+      width:100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .animation{
+      width: 100%;
+      background: #f0e68c;
+      height: auto;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      /*margin: 1% 0 1% 1%;*/
+  
+    }
+    .sub_container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      /*margin: 1% 1% 1%;*/
+      margin-top: 1%;
+      margin-bottom: 1%;
+      
+    }
+  
+    /*animation Coin Flipping------------------------------------------------------------------------*/
+  
+    /*-----------------------------------------------------------------*/
+  
+    /*formula----------------------------------------------------------*/
+    
+    .formula{
+      background: #98fb98;
+      width: 98%;
+      height: 40%;
+      border-bottom: 1px solid black;
+      padding: 0 1% 1% 1%;
+    }
+    
+    .formula span{
+      font-size: 24px;
+      font-weight: bold;
+      animation :demo 5s infinite alternate linear forwards;
+    }
+  
+    /*svg{
+      stroke-dasharray: 150;
+      animation :demo 5s infinite alternate linear forwards;
+    }*/
+  
+    @keyframes demo{
+      0%{
+        fill:none;
+        stroke-dashoffset:1000;
+        opacity: 0.6;
+      }
+      50%{
+        fill:rgba(255,0,0,0);
+        stroke-dashoffset:75;
+        opacity: 0.8;
+      }
+      100%{
+        stroke-dashoffset:0;
+        opacity: 1;
+  
+      }
+    }
+    
+    /*-----------------------------------------------------------------*/
+  
+    /*description------------------------------------------------------*/
+    
+    .description{
+      width: 98%;
+      background: #66cdaa;
+      height: auto;
+      padding: 0 1% 1% 1%;
+    }
+    
+    p{
+      font-family: courier;
+      font-size: 20px;
+    }
+    .description span{
+      font-size: 20px;
+    }
+    /*mi{
+      font-size: 30px;
+    }*/
+  
+  }
